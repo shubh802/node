@@ -1,0 +1,58 @@
+Node
+
+* Any function without any explicit retiurn type will return undefined
+
+* Assign function to var and call them
+
+* Wehnever you assign a variable to another variable you are just making a reference of it not the copy of it.
+
+* this is just a refrence o whatever obj is calling it
+
+* Prototype: To add function or objects to already existing objects
+
+* To import a module
+var movie= require('./movies');
+
+* Module default behaviour is to shsre the same resource to whereever we are using the module
+
+* setInterval repeats regualrly after certain period of time
+
+* fs.createReadStream("./index.html").pipe(response); // to create a stream and display the message
+
+* npm install connect : To install the connect module wch provides completepackage for server
+
+* app.use(doFirst); //What we want to do with connect framework
+
+* We use connect package so that we can add more no middleware and ou our logic to it
+Ex: function doFirst(request,response,next){
+    console.log("Shubham");
+    next();
+}
+function doFirst(request,response,next){
+    console.log("Second");
+    next();
+}
+
+app.use(doFirst);
+app.use(doSecond);
+
+* Using connect we can redirect a web url path to a function and persorm the any action
+app.use('/forum',forum);
+
+* In Express
+	bin->www file is the startup script with the server startup
+	public folder : Anything that user are gonna access like js,css
+	route : How the each page behaves
+	view : html views
+	
+* body-parser: Whenever we have to parse json or text body
+
+* EJS
+
+* <%= %> : If we want to use variable
+* <% %> : If we are writing plain javascrpit
+* <!--  <ul>
+    <% for(var i=0;i<5;i++){ %>
+    <li>Vegan</li>
+    <% } %>
+  </ul>-->
